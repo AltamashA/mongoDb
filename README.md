@@ -1,3 +1,3 @@
-This is a template to use for GKE + MongoDB setup for statefulSets
-# mongoDb
-Have kubernetes .yaml files for Setting up a cluster
+# MongoDB on Kubernetes 
+This is a template to use for AWS/GKE + MongoDB setup for statefulSets
+All these info are collected from web and we don't maintain this.
