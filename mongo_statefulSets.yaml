@@ -14,12 +14,11 @@ spec:
      terminationGracePeriodSeconds: 10
      containers:
        - name: mongo
-         image: mongo:4.0
+         image: mongo:4.2
          command:
            - mongod
            - "--replSet"
            - rs0
-           - "--smallfiles"
            - "--noprealloc"
            - "--bind_ip"
            - "0.0.0.0"
@@ -32,7 +31,7 @@ spec:
          image: cvallance/mongo-k8s-sidecar
          env:
            - name: MONGO_SIDECAR_POD_LABELS
-             value: "role=mongo,environment=test"
+             value: "role=mongo,environment=staging"
  volumeClaimTemplates:
  - metadata:
      name: mongo-persistent-storage
