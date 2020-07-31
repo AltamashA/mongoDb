@@ -19,7 +19,6 @@ spec:
            - mongod
            - "--replSet"
            - rs0
-           - "--noprealloc"
            - "--bind_ip"
            - "0.0.0.0"
          ports:
